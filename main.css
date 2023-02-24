@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Download\ wallpaper\ 3840x2160\ car\,\ sports\ car\,\ neon\,\ backlight\,\ street\ 4k\ uhd\ 16_9\ hd\ background.png');
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    right: 110px;
+}
+header{
+    position: fixed;
+    border-radius: 2px;
+    top: 0;
+    left: 70px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:space-between;
+    z-index: 99;
+}
+.logo{
+position: relative;
+  background: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  border-radius: 1px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+
+.navigation a{
+    position: relative;
+    font-size:1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform.2s;
+}
+
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 1px transparent;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fdfdfd;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .4s;
+
+}
+.btnLogin-popup:hover{
+    background: #ffffff;
+    color: #234661;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 490px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5) ;
+
+    border-radius: 23px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 50px;
+}
+.form-box h2{
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    /* This height tell us what will be the height of email password all the stuff in the blur area */
+    height: 40px;
+    border-bottom: 1px solid rgb(242, 247, 248);
+    /* Upper line line ki thickness decide krti hai  */
+    margin: 35px 0;
+}
+
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-4px;
+}
+
+.input-box input{
+    width: 100%;
+    /* jo tum likho gayy wo kaha takk dikhna chahiyay puri line p ya aadhi line p */
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em; 
+    font-weight: 600;
+    padding: 0 35px 0 5px ;
+
+}
+.remember-forget{
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display:flex;
+    color: #fdfdfd;
+    justify-content:space-between;
+}
+.remember-forget label input{
+    accent-color: rgb(9, 255, 9);
+    margin: right 3px;
+}
+.remember-forget a {
+    accent-color: white;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height:45px;
+    background: rgb(255, 0, 212);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:1em;
+    color: #fff;
+    font-weight: 500;
+}
+.login-register{
+    font-size: .9em;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-regsister p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.login-register p a:hover{
+    text-decoration:underline;
+}
